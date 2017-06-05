@@ -1,0 +1,27 @@
+.jumbotron{
+	background-color: #ff9999;
+	box-sizing: border-box;
+	height: 700px;
+	color: black;
+	font-weight: bolder;
+	font-family: 'Mogra', cursive;
+}
+h2 {
+	font-weight: bolder;
+	color: black;
+	font-family: 'Mogra', cursive;
+}
+
+p {
+	font-family: 'Mogra', cursive;
+}
+
+
+.btn-default{
+	color: #ff4d4d;
+	background-color: black;
+	width: 50%;
+	height: 25%;
+	font-size: 48px;
+	font-weight: bolder;
+}

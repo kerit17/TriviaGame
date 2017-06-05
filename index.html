@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--Style Reset-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!--Link new CSS-->
+		<link rel="stylesheet" href="trivia_assets/css/trivia_style.css">
+		<link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet">
+
+		<!-- Link JavaScript and jQuery-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="trivia_assets/javascript/app.js"></script>
+
+		<title> Trivia Game</title>
+	</head>
+
+<body onload="hide()">
+	<!--Jumbotron with Title-->
+ 	<div class="jumbotron vertical-center">
+   		<div class="container text-center">
+   		<h1>Watermelon Trivia</h1>
+   		<h2>Who knew?</h2>
+   		<br>
+ 	</div>
+
+	<!--Overall Bootstrap Grid-->
+	<div class="container">
+
+	<!--Row 1: Instructions-->
+	<div class="row">
+		<h2>Instructions:</h2>
+
+  <button type="button" class="btn btn-default" id="hide">Start</button>
+	</div>
+<!--Insert timer-->
+
+<!--Questions-->
+	<p id="quiz"></p>
+
+	<p>Q1. The first recorded watermelon harvest occurred nearly 5,000 years ago in Egypt.
+	<br>
+		<input type="radio" value="true">True
+		<input type="radio" value="false">False
+	<br>
+	
+	Q2. Early explorers did not use watermelons as canteens.
+	<br>
+		<input type="radio" value="true">True
+		<input type="radio" value="false">False
+	<br>
+
+	Q3. In Israel and Egypt, the sweet taste of watermelon is often paired with the salty taste of feta cheese.
+	<br>
+		<input type="radio" value="true">True
+		<input type="radio" value="false">False
+	</p>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
