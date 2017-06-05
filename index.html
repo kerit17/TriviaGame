@@ -19,12 +19,11 @@
 		<title> Trivia Game</title>
 	</head>
 
-<body onload="hide()">
+<body>
 	<!--Jumbotron with Title-->
  	<div class="jumbotron vertical-center">
    		<div class="container text-center">
    		<h1>Watermelon Trivia</h1>
-   		<h2>Who knew?</h2>
    		<br>
  	</div>
 
@@ -33,36 +32,92 @@
 
 	<!--Row 1: Instructions-->
 	<div class="row">
-		<h2>Instructions:</h2>
+		<h3>Instructions: Select whether the statement about watermelon is true or false.</h3>
+		<br>
+		<br>
 
-  <button type="button" class="btn btn-default" id="hide">Start</button>
 	</div>
 <!--Insert timer-->
 
 <!--Questions-->
-	<p id="quiz"></p>
+	<table style="width:100%">
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">Question #1: The first recorded watermelon harvest occurred nearly 5,000 years ago in Egypt.</p>
 
-	<p>Q1. The first recorded watermelon harvest occurred nearly 5,000 years ago in Egypt.
-	<br>
-		<input type="radio" value="true">True
-		<input type="radio" value="false">False
-	<br>
+	    	<ul>
+	    	<input class="answer" type="radio" name="q1" value="1">
+	        <label id="correctString1">True</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>False</label>
+	        <br>
+    		</ul>
+	  	</div>
+	  </td>
 	
-	Q2. Early explorers did not use watermelons as canteens.
-	<br>
-		<input type="radio" value="true">True
-		<input type="radio" value="false">False
-	<br>
+	  <td>
+	  	<div>
+	  		<p class="question">Question #2: Early explorers did not use watermelons as canteens.</p>
 
-	Q3. In Israel and Egypt, the sweet taste of watermelon is often paired with the salty taste of feta cheese.
-	<br>
-		<input type="radio" value="true">True
-		<input type="radio" value="false">False
-	</p>
+	    	<ul>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>True</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="1">
+	        <label id="correctString2">False</label>
+	        <br>
+	    	</ul>
+	  	</div>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">Question #3: There are over 1,200 varieties of watermelon grown worldwide.
+			</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q3" value="1">
+	        <label id="correctString3">True</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>False</label>
+	        <br>
+	    	</ul>
+		</div>
+	  </td>
+
+	  <td>
+	  	<div>
+	  		<p class="question">Question #4: All parts of a watermelon is edible.</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q4" value="1">
+	        <label id="correctString4">True</label>
+	        <br><input class="answer" type="radio" name="q4" value="0">
+	        <label>False</label>
+	        <br>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	</table>
+
+<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+          type="submit" value="Submit" />
+    </div>
+  
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
+	</div>
 
 </div>
-</div>
-</div>
-
 </body>
 </html>
